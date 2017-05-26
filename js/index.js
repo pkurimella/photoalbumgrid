@@ -15,9 +15,9 @@ for (var i = 0; i < 25; i++) {
   var width = getRandomSize(400, 1200);
   var height =getRandomSize(200, 600);
   var subject = getRandomSubject();
-  allImages += '<div class="imgContainer"><i class="fa fa-trash fa-pull-right"></i>';
+  allImages += '<div class="imgContainer"><a href="#"><i class="fa fa-times-circle-o fa-pull-right"></i></a>';
   allImages += '<img class="imgItem" src="http://www.loremflickr.com/' + width + '/' + height + '/' + subject + '">';
-  allImages += '<i class="fa '+getRandomStatus()+' fa-pull-right"></i></div>';
+  allImages += '<a href="#"><i class="fa '+getRandomStatus()+' fa-pull-right"></i></a></div>';
 }
 
 $('#photos').append(allImages);
